@@ -30,7 +30,6 @@ RUN chmod 775 /usr/local/bin/pdftk*
 
 USER wodby
 
-COPY ./uw.bashrc /home/wodby/
 RUN sudo npm install -g gulp
 RUN source /etc/profile.d/bash_completion.sh
 RUN echo -e "\n[[ -f ~/uw.bashrc ]] && source ~/uw.bashrc\n" >> /home/wodby/.bashrc
