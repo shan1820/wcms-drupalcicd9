@@ -28,6 +28,9 @@ RUN set -ex; \
 COPY ./pdftk* /usr/local/bin/
 RUN chmod 775 /usr/local/bin/pdftk*
 
+COPY settings.php /usr/local/bin/
+RUN chmod 775 /usr/local/bin/settings.php
+
 USER wodby
 
 RUN sudo npm install -g gulp
